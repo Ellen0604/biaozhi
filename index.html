@@ -150,7 +150,7 @@
 		}
 		.order-page{
 			width: 100%;
-			height: 100%;
+			height: auto;
 			position: fixed;
 			left: 0;
 			top: 0;
@@ -168,7 +168,7 @@
 			width: 76%;
 			height: 3rem;
 			position: absolute;
-			top: 67%;
+			top: 30rem;
 			right: 0;
 			left: 0;
 			margin: auto;
@@ -217,8 +217,8 @@
 		}
 		.order-page .check{
 			position: absolute;
-			top: 30rem;
-			left: 3rem;
+			top: 54%;
+			left: 12%;
 			width: 1rem;
 			height: 1rem;
 		}
@@ -446,12 +446,16 @@
 			console.log("RFS:"+f+"  ("+$("body").width()+"x"+$("body").height()+")");
 		};
 		setRootFont();
+		$(window).resize(function(){setRootFont();});
 		prestrain();
 		$("#return_btn").on("click",function(){
 			$("#order_page").fadeOut();
 		});
 		$("#check_btn").on("click",function(){
 			$(this).find("img").toggleClass("active");
+		});
+		$("#order_page .bg").on("click",function(e){
+			e.preventdefault();
 		});
 	})
 	
