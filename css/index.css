@@ -1,209 +1,251 @@
 *{
-  margin:0;
-  padding:0;
-  border:0;
+  margin: 0;
+  padding: 0;
 }
-html,body{
-  width: 100%;
-  height: 100%;
-  font-size: 15px;
-  overflow: hidden;
-  font-family: "微软雅黑";
+html, body{
+    height: 100%;
+    font-size: 16px;
 }
-.star-header{
-  display: flex;
-  -webkit-display: flex;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  align-items: center;
-  -webkit-align-items: center;
-  padding: 0.8rem 1.333333rem;
+.mask,.swiper-container{
+    width: 100%;
+    height: 100%;
 }
-.logo-text{
-  width: 4.933333rem;
-}
-.logo-img{
-  width: 4.0rem;
-}
-.star-title{
-  color: #de0d38;
-  text-align: center;
-}
-.star-title h1{
-  font-size:1.333333rem;
-  line-height: 3.2rem;
-  font-weight: bold;
-}
-.star-title p{
-  padding: 0 1.666667rem;
-}
-.star-car{
-  text-align: center;
-  margin-top: 1.333333rem;
-  position: relative;
-  z-index: 2;
-}
-.star-car img{
-  width: 11.333333rem;
-}
-.star-wrap{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-  background: url(../img/star-bg.png);
-  background-size: 100% auto;
-  margin-top: -2.933333rem;
-}
-.star-box{
-  width: 12.0rem;
-  height: 12.0rem;
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 5.333333rem;
-  margin: auto;
-}
-.star-box .big-star{
-  width: 12.0rem;
-  height: 12.0rem;
-}
-.star-box .small-star{
-  width: 2.266667rem;
-  height: 2.266667rem;
-  position: absolute;
-  top: 6.2rem;
-  display: none;
-}
-.star-box .small-star1{
-  left: -1.333333rem;
-}
-.star-box .small-star2{
-  left: -4.333333rem;
-}
-.star-box .small-star3{
-  right: -1.333333rem;
-}
-.star-box .small-star4{
-  right: -4.333333rem;
-}
-.anchor{
-  width: 0.75rem;
-  height: 0.75rem;
-  display: block;
-  background-color: #fff;
-  border-radius: 0.75rem;
-}
-.anchor1{
-  width: 0.75rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: auto;
-}
-.anchor2{
-  width: 0.75rem;
-  position: absolute;
-  left: 0;
-  top: 4.3rem;
-}
-.anchor3{
-  width: 0.75rem;
-  position: absolute;
-  right: 0;
-  top: 4.3rem;
-}
-.anchor4{
-  width: 0.75rem;
-  position: absolute;
-  left: 2rem;
-  top: 11.375rem;
-}
-.anchor5{
-  width: 0.75rem;
-  position: absolute;
-  right: 2rem;
-  top: 11.375rem;
-}
-.anchor-text{
-  font-weight: bold;
-  width: 11.25rem;
-  color: #fff;
-  position: absolute;
-  left: -5.625rem;
-  top: -2.0rem;
-  font-size: 0.933333rem;
-  display: none;
-}
-.anchor2 .anchor-text{
-  left: -6.5rem;
-  top: -3.2rem;
-}
-.anchor3 .anchor-text{
-  left: -3.8rem;
-}
-.anchor4 .anchor-text{
-  left: -7.5rem;
-  top: 1.2rem;
-}
-.anchor5 .anchor-text{
-  left: -2.5rem;
-  top: 1.2rem;
-}
-.star-button{
-  font-size: 0.933333rem;
-  color: #de0d38;
-  background-color: #fff;
-  width: 12.0rem;
-  text-align: center;
-  line-height: 2.666667rem;
-  position: absolute;
-  top: 20.666667rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: none;
-}
-.star-box .hand{
-  color: #fff;
-  margin-left: 3rem;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-.star-box .hand img{
-  width: 5.0rem;
-}
-.swiper-button-next, .swiper-button-prev{
-  width: 44px;
-  background-size: 44px 44px;
-}
-.swiper-button-next{
-  background-image:url(../img/swiper-right.png);
-}
-.swiper-button-prev{
-  background-image:url(../img/swiper-left.png);
-}
-.swiper-container{
-  display: none;
+.mask{
+  background-color: #000;
   position: fixed;
   left: 0;
   top: 0;
+  line-height: 100%;
+  color: #fff;
+  z-index: 999;
+  font-size: 2rem;
+}
+.scale{
   width: 100%;
-  height: 100%;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.index-page video{
+  width: 100%;
+  position: relative;
   z-index: 3;
+}
+.index-page .bg{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.index-page .index-title{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 15rem;
+  z-index: 2;
+}
+.index-page .next-icon{
+  width: 10%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+  margin: auto;
+  animation-iteration-count:infinite;
+  -webkit-animation-iteration-count:infinite;
+  z-index: 2;
 }
 .swiper-slide img{
   width: 100%;
-  height: 100%;
+  display: block;
 }
-.swiper-container .close-btn{
+.swiper-container-scrollbar .swiper-slide{
+    height: auto;
+    position: relative;
+}
+.swiper-container-scrollbar .engine-title{
   position: absolute;
-  right: 1.333333rem;
-  top: 1.866667rem;
-  z-index: 4;
+  left: 0;
+  top: 1.3%;
 }
-.swiper-container .close-btn img{
-  width: 1.5rem;
+.swiper-container-scrollbar .motor-word{
+  position: absolute;
+  left: 0;
+  top: 8.1%;
+}
+.swiper-container-scrollbar .gearbox-word{
+  position: absolute;
+  left: 0;
+  top: 13%;
+}
+.swiper-container-scrollbar .model-title{
+  position: absolute;
+  left: 0;
+  top: 19.6%;
+  display: none;
+}
+.swiper-container-scrollbar .grille-word{
+  position: absolute;
+  left: 0;
+  top: 24%;
+  display: none;
+}
+.swiper-container-scrollbar .headlight-word{
+  position: absolute;
+  left: 0;
+  top: 33.6%;
+  display: none;
+}
+.swiper-container-scrollbar .taillight-word{
+  position: absolute;
+  left: 0;
+  top: 38.5%;
+  display: none;
+}
+.swiper-container-scrollbar .rack-word{
+  position: absolute;
+  left: 0;
+  top: 44.5%;
+  display: none;
+}
+.swiper-container-scrollbar .hub-word{
+  position: absolute;
+  left: 0;
+  top: 48.7%;
+  display: none;
+}
+.swiper-container-scrollbar .tent-title{
+  position: absolute;
+  left: 0;
+  top: 52.6%;
+  display: none;
+}
+.swiper-container-scrollbar .atmosphere-word{
+  position: absolute;
+  left: 0;
+  top: 62.3%;
+  display: none;
+}
+.swiper-container-scrollbar .sunshade-word{
+  position: absolute;
+  left: 0;
+  top: 68%;
+  display: none;
+}
+.swiper-container-scrollbar .skylight-word{
+  position: absolute;
+  left: 0;
+  top: 71.5%;
+  display: none;
+}
+.swiper-container-scrollbar .down-payment{
+  position: absolute;
+  left: 0;
+  top: 77.5%;
+  display: none;
+}
+.swiper-container-scrollbar .day-payment{
+  position: absolute;
+  left: 0;
+  top: 80.6%;
+  display: none;
+}
+.swiper-container-scrollbar .next-btn{
+  width: 28%;
+  height: 3rem;
+  position: absolute;
+  left: 12%;
+  bottom: 2.5%;
+}
+.swiper-container-scrollbar .download-btn{
+  width: 34%;
+  height: 3rem;
+  position: absolute;
+  right: 12%;
+  bottom: 2.5%;
+}
+.order-page{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 999;
+}
+.order-page .return-btn{
+  width: 11%;
+  height: 3rem;
+  position: absolute;
+  top: 3%;
+  right: 2rem;
+}
+.order-page .submit-btn{
+  width: 76%;
+  height: 3rem;
+  position: absolute;
+  top: 69%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.order-page img{
+  width: 100%;
+  display: block;
+}
+.order-page select{
+  width: 36%;
+  position: absolute;
+  height: 2.4rem;
+  color: #001c58;
+  padding-left: 0.5rem;
+  top: 33%;
+}
+.order-page input::-webkit-input-placeholder{
+        color: #001c58;
+    }
+.order-page input[type="text"],.order-page input[type="number"]{
+  width: 32%;
+  position: absolute;
+  height: 2.2rem;
+  color: #001c58;
+  padding-left: 0.8rem;
+  top: 22%;
+}
+.order-page .name-input{
+  left: 3.1rem;
+}
+.order-page .phone-input{
+  right: 3.1rem;
+}
+.order-page .province-select{
+  left: 3.15rem;
+}
+.order-page .city-select{
+  right: 3.15rem;
+}
+.order-page .dealer-select{
+  top: 45%;
+  right: 0;
+  left: 0;
+  width: 75%;
+  margin: auto;
+}
+.order-page .check{
+  position: absolute;
+  top: 54%;
+  left: 12%;
+  width: 1rem;
+  height: 1rem;
+}
+.order-page .check img{
+  display: none;
+}
+.order-page img.active{
+  display: block;
 }
