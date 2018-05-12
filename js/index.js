@@ -13,6 +13,7 @@
 			}
 		});
 		var swiperScrollbar = new Swiper('.swiper-container-scrollbar', {
+			watchOverflow: true,
 			scrollbar: '.swiper-container-scrollbar .swiper-scrollbar',
 			direction: 'vertical',
 			slidesPerView: 'auto',
