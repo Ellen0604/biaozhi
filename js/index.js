@@ -21,43 +21,52 @@
 			nested: true,
 		});
 
-		$(".swiper-container-scrollbar .swiper-slide").on("touchmove",function() {
+		$(".swiper-container-scrollbar .swiper-slide").on("touchmove",function(e) {
 			var top = -$(this).find(".bg").offset().top ;
 			var bgH = $(this).height();
 			console.log(top/bgH)
 			if (top/bgH>0.07) {
-				$(".swiper-container-scrollbar .model-title").addClass('animated bounceInDown').show();
+				$(".swiper-container-scrollbar .engine-title").addClass('animated bounceInDown').show();
 			}
 			if (top/bgH>0.12) {
-				$(".swiper-container-scrollbar .grille-word").addClass('animated bounceInLeft').show();
+				$(".swiper-container-scrollbar .motor").addClass('animated fadeIn').show();
+				$(".swiper-container-scrollbar .motor-word").addClass('animated bounceInRight').show();
 			}
-			if (top/bgH>0.20) {
+			if (top/bgH>0.19) {
+				$(".swiper-container-scrollbar .gearbox").addClass('animated fadeIn').show();
+				$(".swiper-container-scrollbar .gearbox-word").addClass('animated bounceInLeft').show();
+			}
+			if (top/bgH>0.25) {
+				$(".swiper-container-scrollbar .model-title").addClass('animated bounceInDown').show();
+			}
+			if (top/bgH>0.31) {
+				$(".swiper-container-scrollbar .dw").addClass('animated fadeIn').show();
 				$(".swiper-container-scrollbar .headlight-word").addClass('animated bounceInRight').show();
+				$(".swiper-container-scrollbar .grille-word").addClass('animated bounceInRight').show();
 			}
-			if (top/bgH>0.24) {
-				$(".swiper-container-scrollbar .taillight-word").addClass('animated bounceInLeft').show();
+			if (top/bgH>0.38) {
+				$(".swiper-container-scrollbar .up").addClass('animated fadeIn').show();
+				$(".swiper-container-scrollbar .rack-word").addClass('animated bounceInDown').show();
+				$(".swiper-container-scrollbar .taillight-word").addClass('animated bounceInRight').show();
+				$(".swiper-container-scrollbar .hub-word").addClass('animated bounceInLeft').show();	
 			}
-			if (top/bgH>0.30) {
-				$(".swiper-container-scrollbar .rack-word").addClass('animated bounceInRight').show();
-			}
-			if (top/bgH>0.34) {
-				$(".swiper-container-scrollbar .hub-word").addClass('animated bounceInLeft').show();
-			}
-			if (top/bgH>0.40) {
+			if (top/bgH>0.45) {
 				$(".swiper-container-scrollbar .tent-title").addClass('animated bounceInDown').show();
 			}
-			if (top/bgH>0.47) {
+			if (top/bgH>0.50) {
+				$(".swiper-container-scrollbar .atmosphere").addClass('animated fadeIn').show();
 				$(".swiper-container-scrollbar .atmosphere-word").addClass('animated bounceInRight').show();
 			}
 			if (top/bgH>0.53) {
+				$(".swiper-container-scrollbar .sunshade").addClass('animated fadeIn').show();
 				$(".swiper-container-scrollbar .sunshade-word").addClass('animated bounceInLeft').show();
 			}
-			if (top/bgH>0.59) {
+			if (top/bgH>0.58) {
+				$(".swiper-container-scrollbar .skylight").addClass('animated fadeIn').show();
 				$(".swiper-container-scrollbar .skylight-word").addClass('animated bounceInRight').show();
 			}
-			if (top/bgH>0.69) {
-				$(".swiper-container-scrollbar .down-payment").addClass('animated swing').show();
-				$(".swiper-container-scrollbar .day-payment").addClass('animated flash').show();
+			if (top/bgH>0.70) {
+				$(".swiper-container-scrollbar .sales").addClass('animated swing').show();
 			}
 		});
 		$("#next_btn").on("click",function(){

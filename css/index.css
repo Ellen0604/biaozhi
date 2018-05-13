@@ -6,6 +6,8 @@ html, body{
     height: 100%;
     font-size: 16px;
 }
+
+/* 预加载 */
 .mask,.swiper-container{
     width: 100%;
     height: 100%;
@@ -30,6 +32,8 @@ html, body{
   margin: auto;
   text-align: center;
 }
+
+/* 首页 */
 .index-page video{
   width: 100%;
   position: relative;
@@ -68,106 +72,227 @@ html, body{
     height: auto;
     position: relative;
 }
+
+/* 心动互联 */
+.swiper-container-scrollbar .interactive-title{
+  width: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1%;
+  margin: auto;
+}
+.swiper-container-scrollbar .music{
+      width: 62%;
+    position: absolute;
+    left: -3%;
+    top: 5.8%;
+}
+.swiper-container-scrollbar .music-word{
+  position: absolute;
+  right: 12%;
+  top: 6.8%;
+  width: 24%;
+}
+.swiper-container-scrollbar .wifi{
+      width: 68%;
+    position: absolute;
+    right: -7%;
+    top: 10.2%;
+}
+.swiper-container-scrollbar .wifi-word{
+      position: absolute;
+    left: 13%;
+    top: 10.8%;
+    width: 34%;
+}
+.swiper-container-scrollbar .speech{
+  width: 52%;
+  position: absolute;
+  left: 0;
+  top: 13.4%;
+}
+.swiper-container-scrollbar .speech-word{
+  position: absolute;
+  right: 12%;
+  top: 14.4%;
+  width: 30%;
+}
+.swiper-container-scrollbar .navigation{
+  width: 56%;
+  position: absolute;
+  right: 0;
+  top: 17.2%;
+}
+.swiper-container-scrollbar .navigation-word{
+  position: absolute;
+  left: 13%;
+  top: 17.8%;
+  width: 30%;
+}
+
+/* 引擎 */
 .swiper-container-scrollbar .engine-title{
   position: absolute;
-  left: 0;
-  top: 1.3%;
-}
-.swiper-container-scrollbar .motor-word{
-  position: absolute;
-  left: 0;
-  top: 8.1%;
-}
-.swiper-container-scrollbar .gearbox-word{
-  position: absolute;
-  left: 0;
-  top: 13%;
-}
-.swiper-container-scrollbar .model-title{
-  position: absolute;
-  left: 0;
-  top: 19.6%;
+  width: 52%;
+  left: 7%;
+  top: 22.4%;
   display: none;
 }
-.swiper-container-scrollbar .grille-word{
+.swiper-container-scrollbar .motor{
   position: absolute;
-  left: 0;
-  top: 24%;
+    width: 94%;
+    left: 0;
+    top: 27%;
+    display: none;
+}
+.swiper-container-scrollbar .motor-word{
+      position: absolute;
+    right: 9%;
+    top: 27.4%;
+    display: none;
+    width: 33%;
+}
+.swiper-container-scrollbar .gearbox{
+      position: absolute;
+    right: -16%;
+    top: 33%;
+    display: none;
+    width: 75%;
+}
+.swiper-container-scrollbar .gearbox-word{
+     position: absolute;
+    left: 10%;
+    top: 36.4%;
+    display: none;
+    width: 32%;
+}
+.swiper-container-scrollbar .model-title{
+    position: absolute;
+    width: 47%;
+    left: 7%;
+    top: 41.3%;
+    display: none;
+}
+.swiper-container-scrollbar .dw{
+      width: 61%;
+    position: absolute;
+    left: 0;
+    top: 46%;
   display: none;
 }
 .swiper-container-scrollbar .headlight-word{
-  position: absolute;
-  left: 0;
-  top: 33.6%;
-  display: none;
+    position: absolute;
+    right: 20%;
+    top: 47.2%;
+    display: none;
+    width: 24%;
 }
-.swiper-container-scrollbar .taillight-word{
-  position: absolute;
-  left: 0;
-  top: 38.5%;
-  display: none;
+.swiper-container-scrollbar .grille-word{
+    position: absolute;
+    right: 11%;
+    top: 48.3%;
+    display: none;
+    width: 29%;
+}
+.swiper-container-scrollbar .up{
+    width: 54%;
+    position: absolute;
+    left: 23%;
+    top: 54.3%;
+    display: none;
 }
 .swiper-container-scrollbar .rack-word{
   position: absolute;
-  left: 0;
-  top: 44.5%;
-  display: none;
+    left: 41%;
+    top: 53.2%;
+    display: none;
+    width: 27%;
+}
+.swiper-container-scrollbar .taillight-word{
+    position: absolute;
+    right: 2%;
+    top: 54.3%;
+    display: none;
+    width: 23%;
 }
 .swiper-container-scrollbar .hub-word{
   position: absolute;
-  left: 0;
-  top: 48.7%;
-  display: none;
+    left: 2%;
+    top: 55.5%;
+    display: none;
+    width: 19%;
 }
 .swiper-container-scrollbar .tent-title{
-  position: absolute;
-  left: 0;
-  top: 52.6%;
-  display: none;
+    position: absolute;
+    right: 12.5%;
+    top: 61.4%;
+    display: none;
+    width: 40%;
+}
+.swiper-container-scrollbar .atmosphere{
+      position: absolute;
+    left: 0;
+    top: 65.4%;
+     display: none; 
+    width: 51%;
 }
 .swiper-container-scrollbar .atmosphere-word{
-  position: absolute;
-  left: 0;
-  top: 62.3%;
-  display: none;
+    position: absolute;
+    right: 9%;
+    top: 67.3%;
+    width: 34%;
+    display: none;
+}
+.swiper-container-scrollbar .sunshade{
+      position: absolute;
+    right: 0;
+    top: 68.8%;
+     display: none; 
+    width: 42.8%;
 }
 .swiper-container-scrollbar .sunshade-word{
   position: absolute;
-  left: 0;
-  top: 68%;
-  display: none;
+    left: 16%;
+    top: 71.8%;
+    display: none;
+    width: 38%;
+}
+.swiper-container-scrollbar .skylight{
+    position: absolute;
+    left: 0;
+    top: 72.9%;
+    display: none;
 }
 .swiper-container-scrollbar .skylight-word{
-  position: absolute;
-  left: 0;
-  top: 71.5%;
-  display: none;
+    position: absolute;
+    right: 18%;
+    top: 74%;
+    display: none;
+    width: 33%;
 }
-.swiper-container-scrollbar .down-payment{
-  position: absolute;
-  left: 0;
-  top: 77.5%;
-  display: none;
-}
-.swiper-container-scrollbar .day-payment{
-  position: absolute;
-  left: 0;
-  top: 80.6%;
-  display: none;
+.swiper-container-scrollbar .sales{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 81.1%;
+    margin: auto;
+    display: none;
+    width: 70%;
 }
 .swiper-container-scrollbar .next-btn{
   width: 28%;
   height: 3rem;
   position: absolute;
   left: 12%;
-  bottom: 2.5%;
+  bottom: 0.5%;
 }
 .swiper-container-scrollbar .download-btn{
   width: 34%;
   height: 3rem;
   position: absolute;
   right: 12%;
-  bottom: 2.5%;
+  bottom: 0.5%;
 }
 .order-page{
   width: 100%;
