@@ -18,6 +18,8 @@
 			direction: 'vertical',
 			slidesPerView: 'auto',
 			freeMode: true,
+			freeModeMomentum: false,
+			freeModeMomentumBounce: false,
 			nested: true,
 		});
 
