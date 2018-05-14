@@ -19,7 +19,6 @@
 			slidesPerView: 'auto',
 			freeMode: true,
 			// freeModeMomentum: false,
-			freeModeMomentumVelocityRatio: 0.2,
 			freeModeMomentumBounce: false,
 			freeModeMinimumVelocity : 1,
 			nested: true,
