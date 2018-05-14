@@ -36,8 +36,10 @@ html, body{
 /* 首页 */
 .index-page video{
   width: 100%;
-  position: relative;
+  position: absolute;
   z-index: 3;
+  left: 0;
+  top: 0;
 }
 .index-page .bg{
   width: 100%;
